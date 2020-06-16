@@ -1,0 +1,249 @@
+@import "../resources.styl"
+@import "../vars.styl"
+
+.block
+  width calc(100% - 20em)
+  padding 2em 10em 2em 10em
+  min-height calc(100vh - 4em)
+  height auto
+  flex-parent(row, wrap, center)
+
+  &.reversed
+    flex-direction row-reverse
+    text-align right
+
+  &.aparted-children
+    justify-content space-between
+
+  &.small
+    min-height 70vh
+
+  &.space-around-children
+    justify-content space-around
+
+  &.light-background
+    background-color theme-color
+
+  &.gray-background
+    background-color #2b2b2b
+    color text-color2
+
+  &.darkest-background
+    background-color #050505
+    color text-color2
+
+  .big-title
+    flex-basis 100%
+    font-size 4.65em
+    margin-top 3.5em
+    text-align center
+
+  .planning-wrapper
+    flex-basis 100%
+    height auto
+    margin-top -13em
+    flex-parent(row, nowrap, center)
+
+    .plan-box
+      flex-basis 28em
+      height 35.5em
+      padding-bottom 2em
+      margin 0 5em 0 1em
+      box-shadow(0px 10px 22px -16px rgba(17,17,17,1))
+      border-radius(1em)
+      transition(.3s)
+      cursor pointer
+      background-color #fff
+
+      &:hover
+        box-shadow(none)
+
+      .plan-name
+        margin-top 1.75em
+        font-size 1.8em
+        font-weight bold
+        text-align center
+
+        .plan-name-specification
+          font-size .7em
+
+      .plan-price
+        margin-top 1em
+        font-size 3.55em
+        text-align center
+        theme-gradient(#111, spotlight-color)
+
+        .minimal-text
+          font-size .39em
+
+      .privileges-list
+        margin-top 1em
+        flex-parent(row, wrap, center)
+        list-style none
+        .plan-privilege
+          padding .5em
+          flex-basis 100%
+          font-size 1.5em
+          text-align center
+
+  // Drawnings
+
+  .ipad-drawning
+    flex-basis 85em
+    height 55em
+    align-self center
+    border 2px solid #444
+    border-radius(4em)
+    flex-parent(row, nowrap, flex-start)
+    box-shadow(5px 5px 22px -9px rgba(0,0,0,0.65))
+    select(none)
+    background-color #121212
+
+    .ipad-camera
+      flex-basis 1em
+      height 1em
+      align-self center
+      margin 0 3.5% 0 2.8%
+      border-radius 50%
+      background-color #333
+
+    .ipad-display
+      flex-basis 86%
+      height 89%
+      align-self center
+      background-color #090909
+
+      .display-image
+        width 100%
+        height 100%
+        border-radius .2em
+        fadeIn(2s)
+
+    .ipad-home-button
+      flex-basis 3.5em
+      height 3.5em
+      align-self center
+      margin 2.2%
+      border 1px solid #333
+      border-radius 50%
+
+  .initial-text-box
+    flex-basis 45em
+    height auto
+    align-self center
+    text-align right
+    margin-left 7.5em
+    fadeIn(1.5s)
+
+    .initial-main-text
+      font-size 8em
+      margin-top -1em
+      theme-gradient()
+
+    .initial-subtext
+      width 80%
+      float right
+      font-size 2.2em
+      font-weight normal
+      margin-top -.9em
+      margin-bottom .3em
+      //color spotlight-dark-color
+
+    .initial-paragraph
+      width 100%
+      float right
+      font-size 1.8em
+      font-weight bold
+      theme-gradient()
+
+      &:hover
+        theme-gradient(spotlight-dark-color, spotlight-color)
+
+  // Titles and descriptions
+
+  .block-text
+    flex-basis 24%
+    align-self center
+    margin 0 8.5em 0 8.5em
+    height auto
+    mark
+      color text-color2
+      background-color rgba(spotlight-color, .95)
+      border-radius .1em
+      padding 0 .13em 0 .13em
+
+    .title
+      font-size 4em
+      font-weight bold
+      margin-bottom .8em
+
+    .paragraph
+      font-size 1.65em
+      font-weight normal
+      line-height 155%
+
+      .go-to-link
+        font-weight bold
+        theme-gradient(#111, #555)
+
+        &:hover
+          theme-gradient(#444, #050505)
+
+  .block-chart
+    flex-basis 28%
+    height 32em
+    align-self center
+    margin 0 8.5em 0 8.5em
+    padding-top 3.8em
+
+    canvas
+      width 100%
+      height 100%
+
+  .example-image
+    flex-basis 25em
+    padding-top 3em
+    height 35em
+    align-self center
+    margin 0 8.5em 0 8.5em
+
+  .mail-form
+    flex-basis 26%
+    height auto
+    align-self center
+    margin 0 8.5em 0 8.5em
+
+    label
+      font-size 1.58em
+      color text-color2
+
+    input[type=text]
+    input[type=email]
+    textarea
+      width calc(100% - 1.5em)
+      padding .75em
+      margin .6em 0 1em 0
+      font-family font1
+      font-size 1.5em
+      color text-color1
+      border none
+      border-radius .5em
+      background-color text-color2
+
+    .send-form-btn
+      margin-top .5em
+      padding .75em 1em .75em 1em
+      float right
+      font-family font1
+      font-size 1.45em
+      font-weight bold
+      color text-color2
+      border none
+      border-radius .5em
+      transition(.3s)
+      cursor pointer
+      background-color spotlight-color
+
+      &:hover
+        color spotlight-color
+        background-color text-color2

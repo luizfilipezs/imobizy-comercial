@@ -1,0 +1,36 @@
+@import "../resources.styl"
+@import "../vars.styl"
+
+.header
+  position fixed
+  z-index 1
+  top 0
+  left 0
+  width calc(100% - 20em)
+  padding 2em 10em 2em 10em
+  flex-parent(row, nowrap, space-between)
+  transition(.3s)
+  box-shadow(0px 2px 7px -4px rgba(0, 0, 0, .2))
+  background-color rgba(#fff, .97)
+
+  &.with-shadow
+    box-shadow(0px 3px 13px -4px rgba(0, 0, 0, .25))
+
+  .header-logo
+    flex-basis auto
+    height 4.5em
+    cursor pointer
+
+  .header-menu
+    flex-basis auto
+    align-self center
+    height auto
+    list-style none
+    flex-parent(row, nowrap, flex-end)
+
+    .header-menu-item
+      margin-left 2.25em
+      font-family font1
+      font-size 1.65em
+      font-weight 500
+      //theme-gradient()

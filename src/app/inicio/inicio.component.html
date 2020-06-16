@@ -1,0 +1,102 @@
+<app-header></app-header>
+<div class="block light-background space-around-children" id="bem-vindo">
+  <div class="ipad-drawning">
+    <div class="ipad-camera"></div>
+    <div class="ipad-display">
+      <img src="assets/img/initial-app-page.png" alt="Tela inicial do Imobizy" class="display-image">
+    </div>
+    <div class="ipad-home-button"></div>
+  </div>
+  <div class="initial-text-box">
+    <h1 class="initial-main-text">Imobizy</h1>
+    <h2 class="initial-subtext">A gestão do ativo imobilizado elevada a outro patamar.</h2>
+    <p class="initial-paragraph"><a routerLink="./" fragment="praticidade">Descubra a aplicação &#8659;</a></p>
+  </div>
+</div>
+<div class="block" id="praticidade">
+  <div class="block-text">
+    <h2 class="title">Registre dados. Veja a <span class="theme-gradient-text">mágica</span> acontecer.</h2>
+    <p class="paragraph">O Imobizy coleta as informações adicionadas dentro da aplicação e as analisa individualmente. Assim, toda vez que abrir a página inicial, o que há de mais relevante será mostrado a você por meio de modernos gráficos que, além de tudo, são <strong>práticos e confiáveis</strong>.</p>
+  </div>
+  <div class="block-chart">
+    <canvas id="example-chart"></canvas>
+  </div>
+</div>
+<div class="block darkest-background reversed">
+  <div class="block-text">
+    <h2 class="title">Não perca <span class="theme-gradient-text">tempo</span> organizando planilhas.</h2>
+    <p class="paragraph">Após registrar os ativos de sua empresa, está na hora de avaliá-los e calcular suas depreciações. E <strong>o Imobizy cuida delas para você</strong> - fiscal, societária, custo atribuído e revisão de vida útil: tudo por nossa conta. Depois você ainda pode exportar os dados em formato CSV (Excel) <strong>sem precisar digitar <i>uma</i> fórmula</strong>.</p>
+  </div>
+  <img src="assets/img/icons/sheet.png" alt="O Imobizy exporta os dados em planilhas e outros formatos" class="example-image">
+</div>
+<div class="block">
+  <div class="block-text">
+    <h2 class="title">Faça o teste <span class="theme-gradient-text">grátis</span> sem se cadastrar.</h2>
+    <p class="paragraph">Você pode verificar pessoalmente os principais recursos que a aplicação oferece através <a class="go-to-link" href="https://imobizy.com.br" target="_blank" rel="Imobizy - Gestão de imobilizado">deste link</a>. Faça gratuitamente a sua própria avaliação da plataforma e depois entre em <a class="go-to-link" routerLink="./" fragment="contato">contato</a> com a nossa equipe para dizer o que achou ;)</p>
+  </div>
+  <img src="assets/img/icons/computer.png" alt="Teste o Imobizy gratuitamente agora mesmo sem precisar se cadastrar!" class="example-image">
+</div>
+<div class="block light-background" id="planos">
+  <h2 class="big-title"><span class="theme-gradient-text">Planos</span> mensais</h2>
+  <div class="planning-wrapper">
+    <div class="plan-box" routerLink="./" fragment="contato">
+      <p class="plan-name">Iniciante</p>
+      <p class="plan-price">R$ 74.99</p>
+      <ul class="privileges-list">
+        <li class="plan-privilege"><strong>Acesso ilimitado:</strong></li>
+        <li class="plan-privilege">Usuários</li>
+        <li class="plan-privilege">Filiais</li>
+        <li class="plan-privilege">Até <span class="theme-gradient-text">1000</span> ativos</li>
+      </ul>
+    </div>
+    <div class="plan-box" routerLink="./" fragment="contato">
+      <p class="plan-name">Intermediário</p>
+      <p class="plan-price">R$ 124.99</p>
+      <ul class="privileges-list">
+        <li class="plan-privilege"><strong>Acesso ilimitado:</strong></li>
+        <li class="plan-privilege">Usuários</li>
+        <li class="plan-privilege">Filiais</li>
+        <li class="plan-privilege">Até <span class="theme-gradient-text">2500</span> ativos</li>
+      </ul>
+    </div>
+    <div class="plan-box" routerLink="./" fragment="contato">
+      <p class="plan-name">Razoável<!--<br><span class="plan-name-specification">(mais popular)</span></span>--></p>
+      <p class="plan-price">R$ 199.99</p>
+      <ul class="privileges-list">
+        <li class="plan-privilege"><strong>Acesso ilimitado:</strong></li>
+        <li class="plan-privilege">Usuários</li>
+        <li class="plan-privilege">Filiais</li>
+        <li class="plan-privilege">Empresas</li>
+        <li class="plan-privilege">Até <span class="theme-gradient-text">5000</span> ativos</li>
+      </ul>
+    </div>
+    <div class="plan-box" routerLink="./" fragment="contato">
+      <p class="plan-name">Variável</p>
+      <p class="plan-price">R$ 0.02/<span class="minimal-text">ativo</span></p>
+      <ul class="privileges-list">
+        <li class="plan-privilege"><strong>Acesso ilimitado:</strong></li>
+        <li class="plan-privilege">Usuários</li>
+        <li class="plan-privilege">Filiais</li>
+        <li class="plan-privilege">Empresas</li>
+        <li class="plan-privilege"><span class="theme-gradient-text">Acima</span> de 5000 ativos</li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="block gray-background small" id="contato">
+  <div class="block-text">
+    <h2 class="title">Fale conosco.</h2>
+    <p class="paragraph">Saiba mais sobre o Imobizy conversando com que mais conhece ele: nossa equipe. Vamos te ajudar a entender melhor as ferramentas, como fazer a migração e como utilizar a aplicação para melhorar a eficiência na gestão do ativo imobilizado dentro da sua empresa.</p>
+  </div>
+  <form class="mail-form">
+    <label for="nome">Nome da empresa (ou seu nome):</label>
+    <input type="text" name="nome" placeholder="Ex.: Sapatos S.A." required>
+    <label for="email">Email (empresarial/profissional):</label>
+    <input type="email" name="email" placeholder="Ex.: email@empresa.com.br">
+    <label for="conteudo">Assunto:</label>
+    <input type="text" name="assunto" placeholder="Ex.: Como migro para o Imobizy?">
+    <label for="conteudo">Conteúdo:</label>
+    <textarea name="conteudo" rows="6" placeholder="Seu texto aqui..."></textarea>
+    <input type="submit" name="enviar" value="Enviar mensagem" class="send-form-btn">
+  </form>
+</div>
